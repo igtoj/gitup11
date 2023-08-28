@@ -19,7 +19,7 @@ ExerG<- function(x){
     return(ExerG6())
   }
   else{
-    print("no se puede bro")
+    print("don't find")
   }
 }
 
