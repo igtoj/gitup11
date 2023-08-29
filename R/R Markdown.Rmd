@@ -1,0 +1,34 @@
+---
+title: "Document"
+author: "Jennyfer Torres"
+date: "2023-08-29"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+-   We use the @param which creates a description object for a given parameter.
+-   We use the @return function to get the result of a particular step in the execution, the one we want to see, not necessarily the last one.
+-   We use the @import function to import the libraries used such as knitr, nycflights13, tidyverse in order to execute the code without errors.
+
+We have an example with the exercises 1 and 6 of the work, where the functions and libraries are used:
+
+Retrieve the solution for exercise 1
+
+ExerG1
+
+Retrieve the solution for exercise 6
+
+ExerG6
+
+Function to select questions and answers based on the exercise number
+
+-   devtools::document(): This function is used to automatically generate package documentation using Roxygen2 comments found in the source code of functions and other package files. It allows adding documentation in the source code using special comments. devtools::document() takes those comments and converts them into readable and formatted documentation.
+
+-   devtools::build_manual(): Once the documentation has been generated with devtools::document(), you can use this function to build the package manual in HTML or PDF format.
